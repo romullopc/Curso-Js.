@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body {
+        font-size: 2em;
+    }
+
+</style>
+
+    <!--                RESUMO DO ESTUDO                                -->
+    <!-- document.write (xxx) : diferente do alert!; leia resposta do body do documento html.-->
+    <!-- var.toUpperCase () <- parênteses : chamada para o método-->
+    <!-- var.toLowerCase () <- parênteses : chamada para o método-->
+
+<body>
+
+    <script>
+
+        var nome = String(window.prompt('Qual é o seu nome?')) //var chamado pelo prompt alert!
+        document.write(` Olá ${nome}, seu nome tem ${nome.length} letras. <br>`) //Template string
+        document.write(`Seu nome em letras maiúsculas é ${nome.toUpperCase()} <br>`) // parenteses no final chamada pro métado
+        document.write(`Seu nomeem minúsculas é ${nome.toLowerCase()}.`) // parenteses no final chamada pro métado
+        
+        
+
+    </script>
+    
+</body>
+</html>
