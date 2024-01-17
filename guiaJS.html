@@ -34,6 +34,10 @@
             padding: 10px;
         }
 
+        h3 {
+            color: brown;
+        }
+
         #maior {
             padding: 0px;
             border: 1px solid black;
@@ -101,7 +105,57 @@
             <p><code>Não</code> podem ser <code>palavras reservadas.</code></p>
             <p><code> = </code> --- atribui valor à variavel.</p>
             <p><code>+ </code> --- usado para concatenar string + variável. Caso queira usar como sinal de adição, tera que connverter <code>string</code> para <code>number.</code></p>
+            <br>
             <p><code> var (nome da var) = window.prompt('xxx')</code> --- Atribui a variável ao alert.</p>
+            <h2>Operadores aritiméticos</h2>
+            <p>operadores aritiméticos > operadores relacionais > operadores Lógicos</p>
+            <br>
+            <h3>Precedência aritimética</h3>
+            <br>
+            <p><code> ()</code> --- Primeiro</p>
+            <p><code> ** </code>--- Segundo </p>
+            <p><code> * / % </code> --- Terceiro (quando houver uma expressão, resolução da esquerda pra direita).</p>
+            <p><code> + - </code> --- Quarto</p>
+            <br>
+            <h3>atribuição simplificada</h3>
+            <br>
+            <p><code>var num = num % 2 </code> --- Quando for atribuir valor na mesma variavel ja declarada podemos simplicar a sintaxe.</p>
+            <p><code>var num %= 2</code> --- esta sintaxe simplificada atribui o mesmo valor do exemplo acima.</p>
+            <p><code>x++ ou ++x</code> --- sintaxe de <i>incremento</i>; muito utilizado para atribuir ou retirar quando se trata de apenas <i>um</i> número </p>
+            <br>
+            <h3>Operadores relacionais</h3>
+            <br>
+            <p>Entre os operadores relacionas não há uma ordem de precedência; sempre terão como resposta entre dos valores <i>(true or False)</i>; também conhecido como valores <i>Booleanos</i>.</p>
+            <p><code>></code> --- Maior</p>
+            <p><code><</code> --- Menor</p>
+            <p><code>>=</code> --- Maior ou igual</p>
+            <p><code><=</code> --- Menor ou igual</p>
+            <p><code>==</code> --- Igualdade <i>(diferente de '=' pois é o sinal de atribuição).</i></p>
+            <p><code>!=</code> --- Diferente</p>
+            <br>
+            <h4>Curiosidade</h4>
+            <br>
+            <p>o opderador aritimético <code>'=='</code> é bem flexivel quando se trata de <i>identidade</i> obs.:</p>
+            <p><code>5 ==  5  True</code> --- pois realmente 5 é igual à cinco!</p>
+            <p><code>5 == '5' True</code> --- este operador relacional <i>(igualdade) </i> não analisa a <i>Tipagem dos dados.</i> </p>
+            <p><code>5 === '5' True</code> --- Neste caso o operador relacional entende como o tipo de dade <i> (Idêntico).</i> </p>
+            <br>
+            <h3>Operadores Lógicos</h3>
+            <br>
+            <p>precedência dos operadores lógicos: <code>!</code> > <code> && </code> > <code> ||</code></p>
+            <p>sempre terão como resposta entre dos valores <i>(true or False)</i>; também conhecido como valores <i>Booleanos</i>.</p>
+            <p><code>!</code> --- Negação; ou seja, se a operação for verdadeira <i>(False)</i>, se a operação for falsa <i>(True)</i>.</p>
+            <p><code>&&</code> --- Conjunção. Quando a operação exige mais de uma condição, e as duas tem que ser executadas para se tornar <i>(True)</i>.</p>
+            <p><code>||</code> --- Disjunção. Quando a operação exige que apenas uma das condições seja executadas para se tornar <i>(True)</i><div class=""></div></p>
+            <br>
+            <h3>Operadores Ternário</h3>
+            <br>
+            <p>operador que testa e analisa o resultado seguindo uma entre duas respostas.</p>
+            <p><code>var resposta = idade >= 18 ? 'maior' : 'menor'</code></p>
+            <p><code> ' ? ' </code>Primeiro: analisar o teste que foi lhe dado (todo cálculo que antecede o ponto de <i>interrogação</i>).</p>
+            <p><code>' : ' </code> Segundo: executando o cálculo, poderemos receber dois tipos de resultado <i>(True or False)</i>, ambos, respectivamente, separados por dois pontos <code>' : '</code></p>
+            <p>Se o resultado for <code>(True)</code> atribuirá os dados que <code>antecedem  ' : '</code></p>
+            <p>Senão, se o resultado for <code>(False)</code> atribuirá os dados que <code>precedem ' : '</code> </p>
         </div>
 
     </div>
