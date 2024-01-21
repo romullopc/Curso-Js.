@@ -34,6 +34,12 @@
             padding: 10px;
         }
 
+        .secundario {
+            color: brown;
+            text-shadow: 1px 1px rgba(0, 0, 0, 0.508);
+            font-size: 2;
+        }
+
         h3 {
             color: brown;
         }
@@ -71,10 +77,14 @@
             
             <p><code> // </code> --- Comentário em 'linha única'.</p>
             <p><code> /* */</code> --- Comentário de parágrafos</p>
-            <p><code> window.altert('xxx')</code>  ---  Mensagem de alert!</p>
-            <p><code> window.confirm('xxx')</code> --- Opção de selecão alrt!</p>
-            <p><code> Window.prompt('xxx')</code> --- Escreva algo na caixa alert!</p>
-            <p><code>document.write(`xxx`)</code> ---Escreva algo no <i>body</i> do documento html.</p>
+            <p><code>inner.Text</code> ---  é uma propriedade que define o conteúdo de texto desse elemento. (não formatado)</p>
+            <p><code>x.inner.HTML</code> --- Retornar o texto (formatado como 'tag', não 'CSS') da palavra reservada, (x).</p>
+            <p><code> window.altert('xxx')</code>  ---  Método mensagem de alert!</p>
+            <p><code> window.confirm('xxx')</code> --- Método opção de selecão alrt!</p>
+            <p><code> Window.prompt('xxx')</code> --- Método responder algo na caixa alert!</p>
+            <p><code>document.write(`xxx`)</code> ---Método escrever algo no <i>body</i> do documento html.</p>
+            <p><code>var p1 = window.document.getElementsByTagName('p')[0]</code> ---  encontrando o primeiro elemento de parágrafo na página HTML e armazenando uma referência a ele na variável p1. Se não houver nenhum elemento de parágrafo na página, p1 será <i>undefined</i>.</p>
+
             
         </div>
 
@@ -157,29 +167,52 @@
             <p>Se o resultado for <code>(True)</code> atribuirá os dados que <code>antecedem  ' : '</code></p>
             <p>Senão, se o resultado for <code>(False)</code> atribuirá os dados que <code>precedem ' : '</code> </p>
             <br>
-            <h3>DOM (Document Object Model)</h3>
+            <h2>DOM (Document Object Model)</h3>
+            <p> o DOM é o INTERMEDIADOR da COMUNICAÇÃO da linguagem JavaScript com as tecnologias HTML5 e CSS3.</p>
             <p>saiba mais <a href="https://www.alura.com.br/artigos/o-que-e-o-dom?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conte%C3%BAdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=111087461203&hsa_ad=687448474447&hsa_src=g&hsa_tgt=aud-456779235794:dsa-843358956400&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAtaOtBhCwARIsAN_x-3KMlOx0ymL8ISqRoHFMZrVJHbdhuBNyM-RgEBMrsKRag9zPn4SnKKEaAgVnEALw_wcB" target="_blank" rel="external"> Clique aqui!</a></p>
             <br>
             <p><i>Elements</i> --- Tudo constitui um <i>document html</i>; Quando manipulado também é conhecido como <i>object</i>.</p>
             <p><i>parent</i> --- Também conhecido como elemento <i>pai</i>, representa os maiores títulos de hierarquia num documento html; exemplo, <i>html</i> é <i>parent</i> de <i>head</i> e <i>body</i>.</p>
             <p><i>child</i> --- Também conhecido como elemento <i>filho</i>, pois representa títulos subjacentes na hierarquia de um documento html; por exemplo, <i>title</i> é <i>child</i> de <i>head</i>.</p>
-            <h3>Arvore DOM</h3>
+            <p><code>x.style.atibuto = 'valor'</code> --- Após declarar uma <i>var</i> atravez do DOM, poderá manipular as CSS do document html.</p>
             <br>
-            <p>É a forma de localiza e formatar componentes DOM respeitando a hierarquia dos elementos <br>Exemplo.:</p>
+            <h3 class="secundario">Manipulação de objetos DOM</h3>
             <br>
-            <p><code>window.document.write('xxx')</code> --- observe que a domínio da hierarquia é escrita da esquerda à direita. No caso <i>write</i>, serve para escrever no ambiente onde foi localizado o <i>DOM.</i></p>
+            <h3>por Marca</h3>
+            <p><code>getElementsByTagName('x')[x]</code> --- Localizado dentro de <code>documents</code>, é uma forma de manipular inumeras <i>'tags'.</i> </p>
+            <p><code>var p1 = window.document.getElementsByTagName('p')[0]</code></p>
+            <p>passo 1 --- declarar a var e o elemento que deseja manipular.(tag object)</p>
+            <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
+            <p>passo 3 --- entre parênteses informe quais <code>tag's</code> serão manipuladas. (manipulação por MARCA podem ser mais du uma.)</p>
+            <p>passo 4 --- entre <i>colchetes</i> informe qual <i>tag</i> específica desejamos manipular. (a primeira <i>tag</i> comça no [0])</p>
             <br>
-            <p>Também é possivel localizar configurações da página <i>WEB.</i></p>
-            <p><code>window.document.write(window.document.charset)</code> --- escrever qual <i>tag meta charset</i> seu navegador esta utilizando</p>
-            <p><code>window.document.write(window.navigator.appName)</code> --- escrever qual tipo de navegador sua página web esta utilizando.</p>
-            <p><code>window.document.write(window.document.URL)</code> --- escrever a <i>"URL"</i> da sua página <i>WEB.</i></p>
-            <h2>Metodos para manipular DOM com JavaScript</h2>
-            <p><code>getElementsByTagName('x')[0]</code> --- por Marca</p>
-            <p>consegue manipular varios elementos</p>
-            <p>por ID</p>
-            <p>por Nome</p>
-            <p>por Classe</p>
-            <p>por Seletor</p>
+            <h3>por ID</h3>
+            <p><code>getElementById('x')</code> --- manipular DOM por ID (único). <i>x</i>  é o ID reservado.</p>
+            <p>passo 1 --- declarar a var e o elemento que deseja manipular.(ID tag)</p>
+            <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
+            <p>passo 3 --- entre parênteses informe qual <code>tag</code> será manipulada. (manipulação por ID é única.)</p>
+            <br>
+            <h3>por Class</h3>
+            <p><code>getElementsByClassName('x')[x]</code> --- manipular DOM por Class (multiplas 'tag') </p>
+            <p>passo 1 --- declarar a var e oelemento que deseja manipular.(Class tag)</p>
+            <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
+            <p>passo 3 --- entre parênteses informe quais <code>tag's</code> seram manipuladas. (manipulação por Class são genéricas.)</p>
+            <p>passo 4 --- entre <i>colchetes</i> informe qual <i>tag</i> específica desejamos manipular. (a primeira <i>tag</i> comça no [0])</p>
+            <br>
+            <h3>por Name</h3>
+            <p><code>getElementsByName('x')[x]</code> --- manipulart DOM por Name (multiplas'tag') </p>
+            <p>passo 1 --- declarar a var e o elemento que deseja manipular.(name tag)</p>
+            <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
+            <p>passo 3 --- entre parênteses informe quais <code>tag's</code> seram manipuladas. (manipulação por Name são genéricas.)</p>
+            <p>passo 4 --- entre <i>colchetes</i> informe qual <i>tag</i> específica desejamos manipular. (a primeira <i>tag</i> comça no [0])</p>
+            <br>
+            <h3>por Selector</h3>
+            <p><code>querySelector ('div.x') ou ('div#x')</code> --- Mipular DOM por seletores (única tag)</p>
+            <p>passo 1 --- declarar a var e o elemento que deseja manipular.(selector tag)</p>
+            <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
+            <p>passo 3 --- entre parênteses informe quais <code>tag's (class ou Id)</code> seram manipuladas. (observar a pontuação, e extender com o <i>valor</i> da class ou Id)</p>
+            
+
         </div>
 
     </div>
