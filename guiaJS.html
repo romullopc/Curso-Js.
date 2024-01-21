@@ -4,215 +4,148 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-        * {
-            padding:0px;
-            margin: 0px;
-            font-family: sans-serif;
-        }
-
-        body {
-            margin: 10px;
-            padding: 10px;
-        }
-        
-        p { 
-            font-family: sans-serif;
-            font-weight: normal;
-            line-height: 2;
-        }
-
-        h1 {
-            padding-bottom: 10px;
-        }
-
-        h2 {
-            color: aliceblue;
-            text-shadow: 1px 1px black;
-            background-color: grey;
-            padding: 10px;
-        }
-
-        .secundario {
-            color: brown;
-            text-shadow: 1px 1px rgba(0, 0, 0, 0.508);
-            font-size: 2;
-        }
-
-        h3 {
-            color: brown;
-        }
-
-        #maior {
-            padding: 0px;
-            border: 1px solid black;
-            
-        }
-
-        #segunda {
-            background-color: lightgrey;
-            padding: 15px 10px;
-            border-top: 0px;
-        }
-
-        code {
-            
-            font-weight: 550;
-        }
-
-        i{
-            font-weight: 550;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="guia.estilo.html">
 </head>
 <body>
     <h1>Java Scripit</h1>
 
-    <div id="maior">
-
-        <h2>Códigos</h2>
+    <div id="maior">      
         <div id="segunda">
-            
-            <p><code> // </code> --- Comentário em 'linha única'.</p>
-            <p><code> /* */</code> --- Comentário de parágrafos</p>
-            <p><code>inner.Text</code> ---  é uma propriedade que define o conteúdo de texto desse elemento. (não formatado)</p>
-            <p><code>x.inner.HTML</code> --- Retornar o texto (formatado como 'tag', não 'CSS') da palavra reservada, (x).</p>
-            <p><code> window.altert('xxx')</code>  ---  Método mensagem de alert!</p>
-            <p><code> window.confirm('xxx')</code> --- Método opção de selecão alrt!</p>
-            <p><code> Window.prompt('xxx')</code> --- Método responder algo na caixa alert!</p>
-            <p><code>document.write(`xxx`)</code> ---Método escrever algo no <i>body</i> do documento html.</p>
-            <p><code>var p1 = window.document.getElementsByTagName('p')[0]</code> ---  encontrando o primeiro elemento de parágrafo na página HTML e armazenando uma referência a ele na variável p1. Se não houver nenhum elemento de parágrafo na página, p1 será <i>undefined</i>.</p>
-
-            
-        </div>
-
-        <h2>Variáveis</h2>
+            <h2>Códigos</h2>
+                <p><code> // </code> --- Comentário em 'linha única'.</p>
+                <p><code> /* */</code> --- Comentário de parágrafos</p>
+                <p><code>inner.Text</code> ---  é uma propriedade que define o conteúdo de texto desse elemento. (não formatado)</p>
+                <p><code>x.inner.HTML</code> --- Retornar o texto (formatado como 'tag', não 'CSS') da palavra reservada, (x).</p>
+                <p><code> window.altert('xxx')</code>  ---  Método mensagem de alert!</p>
+                <p><code> window.confirm('xxx')</code> --- Método opção de selecão alrt!</p>
+                <p><code> Window.prompt('xxx')</code> --- Método responder algo na caixa alert!</p>
+                <p><code>document.write(`xxx`)</code> ---Método escrever algo no <i>body</i> do documento html.</p>
+                <p><code>var p1 = window.document.getElementsByTagName('p')[0]</code> ---  encontrando o primeiro elemento de parágrafo na página HTML e armazenando uma referência a ele na variável p1. Se não houver nenhum elemento de parágrafo na página, p1 será <i>undefined</i>.</p> 
+        </div>   
         <div id="segunda">
-
-            <h3>Tipos primitivos primordiais</h3>
-            <br>
-            <p><code>typeof xxx</code> --- indentica qual tipo primitivo da variavel selecionada.</p>
-            <p><code>Númerais</code> --- 1 2 3,  -1 -2 -3,  1.1 1.2 1.3</p>
-            <p><code>Number(n)</code> --- converte <i>var </i>para <i>número de forma genérica. (ES6)</i></p>
-            <p><code>var.toFixed(2) </code> --- acrescentar um <i>.</i> após a <i>var</i> e conta quantas casas desejar.</p>
-            <p><code>var.toFixed(2).replace('.', ',')</code> --- para trocar o <i>.</i> por <i>,</i> em números reais.</p>
-            <p><code>Number.parseInt(n)</code> --- converter <i>var</i> para <i>números ineiros</i></p>
-            <p><code>Number.parseFloat(n)</code> --- converter <i>var</i> para <i>números reais</i>.</p>
-            <p><code>String </code> --- Variáveis com sequências de caracteres, (numerais ou letras).</p>
-            <p><code>String(n)</code> --- converte <i>números</i> para <i>String de forma genérica. (ES6)</i></p>
-            <p><code>` xxx ${var} xxx`</code> --- <i>Template string</i> forma mais limpla de escrever a <i>var</i> para o usuário. <i>(ES6)</i></p>
-            <P><code>var.length</code> --- quantos <i>caracteres</i> a <i>String</i> tem.</P>
-            <p><code>var.toUpperCase()</code> --- Formatação da <i>string;</i> tudo para <i>MAIÚSCULA</i></p>
-            <p><code>vat.toLowerCase()</code> --- Formatação da <i>string.</i> tudo para <i>minúscula</i></p>
-            <p><code>Booleans</code> --- condicionais (True and False).</p>
-            <p> Podem começar com <code>Letra</code>, <code>$</code> ou <code>_</code></p>
-            <p><code>não </code> podem começar com <code>número</code>.</p>
-            <p> É possível usar <code>letras</code> e <code>números.</code> (letras maiúsculas fazem, diferença!).</p>
-            <p> É possivel <code>acentos</code> e <code>símbulo.s</code></p>
-            <p><code>Não</code> podem conter <code>espaços.</code></p>
-            <p><code>Não</code> podem ser <code>palavras reservadas.</code></p>
-            <p><code> = </code> --- atribui valor à variavel.</p>
-            <p><code>+ </code> --- usado para concatenar string + variável. Caso queira usar como sinal de adição, tera que connverter <code>string</code> para <code>number.</code></p>
-            <br>
-            <p><code> var (nome da var) = window.prompt('xxx')</code> --- Atribui a variável ao alert.</p>
+            <h2>Variáveis</h2>
+                <h3>Tipos primitivos primordiais</h3>
+                    <br>
+                    <p><code>typeof xxx</code> --- indentica qual tipo primitivo da variavel selecionada.</p>
+                    <p><code>Númerais</code> --- 1 2 3,  -1 -2 -3,  1.1 1.2 1.3</p>
+                    <p><code>Number(n)</code> --- converte <i>var </i>para <i>número de forma genérica. (ES6)</i></p>
+                    <p><code>var.toFixed(2) </code> --- acrescentar um <i>.</i> após a <i>var</i> e conta quantas casas desejar.</p>
+                    <p><code>var.toFixed(2).replace('.', ',')</code> --- para trocar o <i>.</i> por <i>,</i> em números reais.</p>
+                    <p><code>Number.parseInt(n)</code> --- converter <i>var</i> para <i>números ineiros</i></p>
+                    <p><code>Number.parseFloat(n)</code> --- converter <i>var</i> para <i>números reais</i>.</p>
+                    <p><code>String </code> --- Variáveis com sequências de caracteres, (numerais ou letras).</p>
+                    <p><code>String(n)</code> --- converte <i>números</i> para <i>String de forma genérica. (ES6)</i></p>
+                    <p><code>` xxx ${var} xxx`</code> --- <i>Template string</i> forma mais limpla de escrever a <i>var</i> para o usuário. <i>(ES6)</i></p>
+                    <P><code>var.length</code> --- quantos <i>caracteres</i> a <i>String</i> tem.</P>
+                    <p><code>var.toUpperCase()</code> --- Formatação da <i>string;</i> tudo para <i>MAIÚSCULA</i></p>
+                    <p><code>vat.toLowerCase()</code> --- Formatação da <i>string.</i> tudo para <i>minúscula</i></p>
+                    <p><code>Booleans</code> --- condicionais (True and False).</p>
+                    <p> Podem começar com <code>Letra</code>, <code>$</code> ou <code>_</code></p>
+                    <p><code>não </code> podem começar com <code>número</code>.</p>
+                    <p> É possível usar <code>letras</code> e <code>números.</code> (letras maiúsculas fazem, diferença!).</p>
+                    <p> É possivel <code>acentos</code> e <code>símbulo.s</code></p>
+                    <p><code>Não</code> podem conter <code>espaços.</code></p>
+                    <p><code>Não</code> podem ser <code>palavras reservadas.</code></p>
+                    <p><code> = </code> --- atribui valor à variavel.</p>
+                    <p><code>+ </code> --- usado para concatenar string + variável. Caso queira usar como sinal de adição, tera que connverter <code>string</code> para <code>number.</code></p>
+                    <br>
+                    <p><code> var (nome da var) = window.prompt('xxx')</code> --- Atribui a variável ao alert.</p>
             <h2>Operadores aritiméticos</h2>
-            <p>operadores aritiméticos > operadores relacionais > operadores Lógicos</p>
-            <br>
-            <h3>Precedência aritimética</h3>
-            <br>
-            <p><code> ()</code> --- Primeiro</p>
-            <p><code> ** </code>--- Segundo </p>
-            <p><code> * / % </code> --- Terceiro (quando houver uma expressão, resolução da esquerda pra direita).</p>
-            <p><code> + - </code> --- Quarto</p>
-            <br>
-            <h3>atribuição simplificada</h3>
-            <br>
-            <p><code>var num = num % 2 </code> --- Quando for atribuir valor na mesma variavel ja declarada podemos simplicar a sintaxe.</p>
-            <p><code>var num %= 2</code> --- esta sintaxe simplificada atribui o mesmo valor do exemplo acima.</p>
-            <p><code>x++ ou ++x</code> --- sintaxe de <i>incremento</i>; muito utilizado para atribuir ou retirar quando se trata de apenas <i>um</i> número </p>
-            <br>
-            <h3>Operadores relacionais</h3>
-            <br>
-            <p>Entre os operadores relacionas não há uma ordem de precedência; sempre terão como resposta entre dos valores <i>(true or False)</i>; também conhecido como valores <i>Booleanos</i>.</p>
-            <p><code>></code> --- Maior</p>
-            <p><code><</code> --- Menor</p>
-            <p><code>>=</code> --- Maior ou igual</p>
-            <p><code><=</code> --- Menor ou igual</p>
-            <p><code>==</code> --- Igualdade <i>(diferente de '=' pois é o sinal de atribuição).</i></p>
-            <p><code>!=</code> --- Diferente</p>
-            <br>
-            <h4>Curiosidade</h4>
-            <br>
-            <p>o opderador aritimético <code>'=='</code> é bem flexivel quando se trata de <i>identidade</i> obs.:</p>
-            <p><code>5 ==  5  True</code> --- pois realmente 5 é igual à cinco!</p>
-            <p><code>5 == '5' True</code> --- este operador relacional <i>(igualdade) </i> não analisa a <i>Tipagem dos dados.</i> </p>
-            <p><code>5 === '5' True</code> --- Neste caso o operador relacional entende como o tipo de dade <i> (Idêntico).</i> </p>
-            <br>
-            <h3>Operadores Lógicos</h3>
-            <br>
-            <p>precedência dos operadores lógicos: <code>!</code> > <code> && </code> > <code> ||</code></p>
-            <p>sempre terão como resposta entre dos valores <i>(true or False)</i>; também conhecido como valores <i>Booleanos</i>.</p>
-            <p><code>!</code> --- Negação; ou seja, se a operação for verdadeira <i>(False)</i>, se a operação for falsa <i>(True)</i>.</p>
-            <p><code>&&</code> --- Conjunção. Quando a operação exige mais de uma condição, e as duas tem que ser executadas para se tornar <i>(True)</i>.</p>
-            <p><code>||</code> --- Disjunção. Quando a operação exige que apenas uma das condições seja executadas para se tornar <i>(True)</i><div class=""></div></p>
-            <br>
-            <h3>Operadores Ternário</h3>
-            <br>
-            <p>operador que testa e analisa o resultado seguindo uma entre duas respostas.</p>
-            <p><code>var resposta = idade >= 18 ? 'maior' : 'menor'</code></p>
-            <p><code> ' ? ' </code>Primeiro: analisar o teste que foi lhe dado (todo cálculo que antecede o ponto de <i>interrogação</i>).</p>
-            <p><code>' : ' </code> Segundo: executando o cálculo, poderemos receber dois tipos de resultado <i>(True or False)</i>, ambos, respectivamente, separados por dois pontos <code>' : '</code></p>
-            <p>Se o resultado for <code>(True)</code> atribuirá os dados que <code>antecedem  ' : '</code></p>
-            <p>Senão, se o resultado for <code>(False)</code> atribuirá os dados que <code>precedem ' : '</code> </p>
-            <br>
+                <p>operadores aritiméticos > operadores relacionais > operadores Lógicos</p>
+                <br>
+                <h3>Precedência aritimética</h3>
+                    <br>
+                    <p><code> ()</code> --- Primeiro</p>
+                    <p><code> ** </code>--- Segundo </p>
+                    <p><code> * / % </code> --- Terceiro (quando houver uma expressão, resolução da esquerda pra direita).</p>
+                    <p><code> + - </code> --- Quarto</p>
+                    <br>
+                <h3>atribuição simplificada</h3>
+                    <br>
+                    <p><code>var num = num % 2 </code> --- Quando for atribuir valor na mesma variavel ja declarada podemos simplicar a sintaxe.</p>
+                    <p><code>var num %= 2</code> --- esta sintaxe simplificada atribui o mesmo valor do exemplo acima.</p>
+                    <p><code>x++ ou ++x</code> --- sintaxe de <i>incremento</i>; muito utilizado para atribuir ou retirar quando se trata de apenas <i>um</i> número </p>
+                    <br>
+                <h3>Operadores relacionais</h3>
+                    <br>
+                    <p>Entre os operadores relacionas não há uma ordem de precedência; sempre terão como resposta entre dos valores <i>(true or False)</i>; também conhecido como valores <i>Booleanos</i>.</p>
+                    <p><code>></code> --- Maior</p>
+                    <p><code><</code> --- Menor</p>
+                    <p><code>>=</code> --- Maior ou igual</p>
+                    <p><code><=</code> --- Menor ou igual</p>
+                    <p><code>==</code> --- Igualdade <i>(diferente de '=' pois é o sinal de atribuição).</i></p>
+                    <p><code>!=</code> --- Diferente</p>
+                    <br>
+                    <h4>Curiosidade</h4>
+                        <br>
+                        <p>o opderador aritimético <code>'=='</code> é bem flexivel quando se trata de <i>identidade</i> obs.:</p>
+                        <p><code>5 ==  5  True</code> --- pois realmente 5 é igual à cinco!</p>
+                        <p><code>5 == '5' True</code> --- este operador relacional <i>(igualdade) </i> não analisa a <i>Tipagem dos dados.</i> </p>
+                        <p><code>5 === '5' True</code> --- Neste caso o operador relacional entende como o tipo de dade <i> (Idêntico).</i> </p>
+                        <br>
+                <h3>Operadores Lógicos</h3>
+                    <br>
+                    <p>precedência dos operadores lógicos: <code>!</code> > <code> && </code> > <code> ||</code></p>
+                    <p>sempre terão como resposta entre dos valores <i>(true or False)</i>; também conhecido como valores <i>Booleanos</i>.</p>
+                    <p><code>!</code> --- Negação; ou seja, se a operação for verdadeira <i>(False)</i>, se a operação for falsa <i>(True)</i>.</p>
+                    <p><code>&&</code> --- Conjunção. Quando a operação exige mais de uma condição, e as duas tem que ser executadas para se tornar <i>(True)</i>.</p>
+                    <p><code>||</code> --- Disjunção. Quando a operação exige que apenas uma das condições seja executadas para se tornar <i>(True)</i><div class=""></div></p>
+                    <br>
+                <h3>Operadores Ternário</h3>
+                    <br>
+                    <p>operador que testa e analisa o resultado seguindo uma entre duas respostas.</p>
+                    <p><code>var resposta = idade >= 18 ? 'maior' : 'menor'</code></p>
+                    <p><code> ' ? ' </code>Primeiro: analisar o teste que foi lhe dado (todo cálculo que antecede o ponto de <i>interrogação</i>).</p>
+                    <p><code>' : ' </code> Segundo: executando o cálculo, poderemos receber dois tipos de resultado <i>(True or False)</i>, ambos, respectivamente, separados por dois pontos <code>' : '</code></p>
+                    <p>Se o resultado for <code>(True)</code> atribuirá os dados que <code>antecedem  ' : '</code></p>
+                    <p>Senão, se o resultado for <code>(False)</code> atribuirá os dados que <code>precedem ' : '</code> </p>
+                    <br>
             <h2>DOM (Document Object Model)</h3>
-            <p> o DOM é o INTERMEDIADOR da COMUNICAÇÃO da linguagem JavaScript com as tecnologias HTML5 e CSS3.</p>
-            <p>saiba mais <a href="https://www.alura.com.br/artigos/o-que-e-o-dom?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conte%C3%BAdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=111087461203&hsa_ad=687448474447&hsa_src=g&hsa_tgt=aud-456779235794:dsa-843358956400&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAtaOtBhCwARIsAN_x-3KMlOx0ymL8ISqRoHFMZrVJHbdhuBNyM-RgEBMrsKRag9zPn4SnKKEaAgVnEALw_wcB" target="_blank" rel="external"> Clique aqui!</a></p>
-            <br>
-            <p><i>Elements</i> --- Tudo constitui um <i>document html</i>; Quando manipulado também é conhecido como <i>object</i>.</p>
-            <p><i>parent</i> --- Também conhecido como elemento <i>pai</i>, representa os maiores títulos de hierarquia num documento html; exemplo, <i>html</i> é <i>parent</i> de <i>head</i> e <i>body</i>.</p>
-            <p><i>child</i> --- Também conhecido como elemento <i>filho</i>, pois representa títulos subjacentes na hierarquia de um documento html; por exemplo, <i>title</i> é <i>child</i> de <i>head</i>.</p>
-            <p><code>x.style.atibuto = 'valor'</code> --- Após declarar uma <i>var</i> atravez do DOM, poderá manipular as CSS do document html.</p>
-            <br>
-            <h3 class="secundario">Manipulação de objetos DOM</h3>
-            <br>
-            <h3>por Marca</h3>
-            <p><code>getElementsByTagName('x')[x]</code> --- Localizado dentro de <code>documents</code>, é uma forma de manipular inumeras <i>'tags'.</i> </p>
-            <p><code>var p1 = window.document.getElementsByTagName('p')[0]</code></p>
-            <p>passo 1 --- declarar a var e o elemento que deseja manipular.(tag object)</p>
-            <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
-            <p>passo 3 --- entre parênteses informe quais <code>tag's</code> serão manipuladas. (manipulação por MARCA podem ser mais du uma.)</p>
-            <p>passo 4 --- entre <i>colchetes</i> informe qual <i>tag</i> específica desejamos manipular. (a primeira <i>tag</i> comça no [0])</p>
-            <br>
-            <h3>por ID</h3>
-            <p><code>getElementById('x')</code> --- manipular DOM por ID (único). <i>x</i>  é o ID reservado.</p>
-            <p>passo 1 --- declarar a var e o elemento que deseja manipular.(ID tag)</p>
-            <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
-            <p>passo 3 --- entre parênteses informe qual <code>tag</code> será manipulada. (manipulação por ID é única.)</p>
-            <br>
-            <h3>por Class</h3>
-            <p><code>getElementsByClassName('x')[x]</code> --- manipular DOM por Class (multiplas 'tag') </p>
-            <p>passo 1 --- declarar a var e oelemento que deseja manipular.(Class tag)</p>
-            <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
-            <p>passo 3 --- entre parênteses informe quais <code>tag's</code> seram manipuladas. (manipulação por Class são genéricas.)</p>
-            <p>passo 4 --- entre <i>colchetes</i> informe qual <i>tag</i> específica desejamos manipular. (a primeira <i>tag</i> comça no [0])</p>
-            <br>
-            <h3>por Name</h3>
-            <p><code>getElementsByName('x')[x]</code> --- manipulart DOM por Name (multiplas'tag') </p>
-            <p>passo 1 --- declarar a var e o elemento que deseja manipular.(name tag)</p>
-            <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
-            <p>passo 3 --- entre parênteses informe quais <code>tag's</code> seram manipuladas. (manipulação por Name são genéricas.)</p>
-            <p>passo 4 --- entre <i>colchetes</i> informe qual <i>tag</i> específica desejamos manipular. (a primeira <i>tag</i> comça no [0])</p>
-            <br>
-            <h3>por Selector</h3>
-            <p><code>querySelector ('div.x') ou ('div#x')</code> --- Mipular DOM por seletores (única tag)</p>
-            <p>passo 1 --- declarar a var e o elemento que deseja manipular.(selector tag)</p>
-            <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
-            <p>passo 3 --- entre parênteses informe quais <code>tag's (class ou Id)</code> seram manipuladas. (observar a pontuação, e extender com o <i>valor</i> da class ou Id)</p>
-            
-
+                <p> o DOM é o INTERMEDIADOR da COMUNICAÇÃO da linguagem JavaScript com as tecnologias HTML5 e CSS3.</p>
+                <p>saiba mais <a href="https://www.alura.com.br/artigos/o-que-e-o-dom?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conte%C3%BAdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=111087461203&hsa_ad=687448474447&hsa_src=g&hsa_tgt=aud-456779235794:dsa-843358956400&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiAtaOtBhCwARIsAN_x-3KMlOx0ymL8ISqRoHFMZrVJHbdhuBNyM-RgEBMrsKRag9zPn4SnKKEaAgVnEALw_wcB" target="_blank" rel="external"> Clique aqui!</a></p>
+                <br>
+                <p><i>Elements</i> --- Tudo constitui um <i>document html</i>; Quando manipulado também é conhecido como <i>object</i>.</p>
+                <p><i>parent</i> --- Também conhecido como elemento <i>pai</i>, representa os maiores títulos de hierarquia num documento html; exemplo, <i>html</i> é <i>parent</i> de <i>head</i> e <i>body</i>.</p>
+                <p><i>child</i> --- Também conhecido como elemento <i>filho</i>, pois representa títulos subjacentes na hierarquia de um documento html; por exemplo, <i>title</i> é <i>child</i> de <i>head</i>.</p>
+                <p><code>x.style.atibuto = 'valor'</code> --- Após declarar uma <i>var</i> atravez do DOM, poderá manipular as CSS do document html.</p>
+                <br>
+                <h3 class="secundario">Manipulação de objetos DOM</h3>
+                    <br>
+                <h3>por Marca</h3>
+                    <p><code>getElementsByTagName('x')[x]</code> --- Localizado dentro de <code>documents</code>, é uma forma de manipular inumeras <i>'tags'.</i> </p>
+                    <p><code>var p1 = window.document.getElementsByTagName('p')[0]</code></p>
+                    <p>passo 1 --- declarar a var e o elemento que deseja manipular.(tag object)</p>
+                    <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
+                    <p>passo 3 --- entre parênteses informe quais <code>tag's</code> serão manipuladas. (manipulação por MARCA podem ser mais du uma.)</p>
+                    <p>passo 4 --- entre <i>colchetes</i> informe qual <i>tag</i> específica desejamos manipular. (a primeira <i>tag</i> comça no [0])</p>
+                    <br>
+                <h3>por ID</h3>
+                    <p><code>getElementById('x')</code> --- manipular DOM por ID (único). <i>x</i>  é o ID reservado.</p>
+                    <p>passo 1 --- declarar a var e o elemento que deseja manipular.(ID tag)</p>
+                    <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
+                    <p>passo 3 --- entre parênteses informe qual <code>tag</code> será manipulada. (manipulação por ID é única.)</p>
+                    <br>
+                <h3>por Class</h3>
+                    <p><code>getElementsByClassName('x')[x]</code> --- manipular DOM por Class (multiplas 'tag') </p>
+                    <p>passo 1 --- declarar a var e oelemento que deseja manipular.(Class tag)</p>
+                    <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
+                    <p>passo 3 --- entre parênteses informe quais <code>tag's</code> seram manipuladas. (manipulação por Class são genéricas.)</p>
+                    <p>passo 4 --- entre <i>colchetes</i> informe qual <i>tag</i> específica desejamos manipular. (a primeira <i>tag</i> comça no [0])</p>
+                    <br>
+                <h3>por Name</h3>
+                    <p><code>getElementsByName('x')[x]</code> --- manipulart DOM por Name (multiplas'tag') </p>
+                    <p>passo 1 --- declarar a var e o elemento que deseja manipular.(name tag)</p>
+                    <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
+                    <p>passo 3 --- entre parênteses informe quais <code>tag's</code> seram manipuladas. (manipulação por Name são genéricas.)</p>
+                    <p>passo 4 --- entre <i>colchetes</i> informe qual <i>tag</i> específica desejamos manipular. (a primeira <i>tag</i> comça no [0])</p>
+                    <br>
+                <h3>por Selector</h3>
+                    <p><code>querySelector ('div.x') ou ('div#x')</code> --- Mipular DOM por seletores (única tag)</p>
+                    <p>passo 1 --- declarar a var e o elemento que deseja manipular.(selector tag)</p>
+                    <p>passo 2 --- fazer o trajeto respeitando a hierarquia DOM (método)</p>
+                    <p>passo 3 --- entre parênteses informe quais <code>tag's (class ou Id)</code> seram manipuladas. (observar a pontuação, e extender com o <i>valor</i> da class ou Id)</p>
+                    
         </div>
 
     </div>

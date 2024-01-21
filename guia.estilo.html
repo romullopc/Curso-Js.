@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Guia CSS</title>
+    
+</head>
+<body>  
+    <h1>Css</h1>
+    <div id="maior">
+        <div id="segunda">
+            <h2> Head</h2>
+                <p><code>@charset "UTF-8";</code> --- é uma regra CSS que especifica a codificação de caracteres do arquivo de folha de estilo. Ele deve ser colocado na primeira linha do arquivo CSS e não pode ter nenhum caractere antes dele, incluindo comentários. Isso garante que o arquivo CSS seja interpretado corretamente pelo navegador.</p>
+                <p><code>*{} </code>--- é um seletor universal em CSS que seleciona todos os elementos na página.</p>
+                <p><code> main </code> --- O elemento define o conteúdo principal dentro do <i>'body'</i> em seu documento ou aplicação. Entende-se como conteúdo principal aquele relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação. Ele não pode ser filho dos elementos</p>
+                <p><code>article, aside, footer, header ou nav</code> --- são <i>tag's</i> semânticas que ajudam o SEO do Google; São amplamente suportado pelos navegadores modernos, exceto pelo Internet Explorer.</p>
+                <p><code>style</code> (CSS local) A tag é usada para definir estilos CSS dentro do cabeçalho <head> de uma página HTML. Por exemplo, para definir a cor do texto de todas as tag especificadas dentro das chaves {}. OBS.: utilidade para apenas uma página</p>
+                <p><code>link:css </code>--- (CSS externo ) é um arquivo separado que contém regras CSS para estilizar um documento HTML. Para vincular uma folha de estilo CSS externa a um documento HTML, você pode usar o elemento link:css dentro do elemento head do documento HTML.  OBS.: utilidade para todas as páginas vinculadas</p>
+                <p><code>background-color</code> --- esta propriedade define a cor de fundo de um elemento. Você pode definir seu valor como um nome de cor, um valor hexadecimal ou um valor RGB.</p>
+                <p><code>color </code>--- esta propriedade define a cor do texto de um elemento. Você pode definir seu valor como um nome de cor, um valor hexadecimal ou um valor RGB.</p> 
+        </div>
+
+        <div id="segunda">
+            <h2>Body</h2>
+                <br>
+                <h3>Fonte</h3>
+                    <br>
+                    <code class="primal"><i>Font : style > variant > weight > size > family</i></code>
+                    <br>
+                    <code class="primal">Font: italic bolder 1em 'work sans' sans-serif;</code>
+                    <p><code>@font-face {}</code> --- é uma regra CSS que permite usar fontes personalizadas em seu site. Ela especifica uma fonte personalizada para exibir texto; a fonte pode ser carregada de um servidor remoto ou de uma fonte instalada localmente no computador do usuário.</p>     
+                    <p><code>src e format</code> --- são descritores usados na regra @font-face. O descritor src é usado para especificar o local de onde a fonte deve ser carregada. Ele pode ser usado para especificar um URL para uma fonte remota ou para especificar o nome de uma fonte instalada localmente no computador do usuário.  O descritor format é usado para especificar o formato da fonte que está sendo carregada. Ele é usado em conjunto com o descritor src para informar ao navegador qual o formato da fonte que está sendo carregada. Isso é útil porque diferentes navegadores suportam diferentes formatos de fonte.</p>          
+                    <p><code>TTF e OTF </code>--- são formatos de fonte. TTF significa TrueType Font e OTF significa OpenType Font. Ambos são formatos de fonte escalonáveis, o que significa que eles podem ser redimensionados sem perder qualidade.             TTF e OTF são suportados pela maioria dos navegadores modernos e podem ser usados com a regra @font-face para carregar fontes personalizadas em seu site. Para usar uma fonte TTF ou OTF com @font-face, você deve especificar o URL da fonte usando o descritor src e especificar o formato da fonte usando o descritor format. TTF = format('truetype') OTF= format('opentype') Existem outros formatos, porém esses dois são mais compatíveis. Além dos atributos font-family e src vistos anteriormente a diretiva @font-face contém ainda outros atributos opcionais: Font-stretch,; font-style; font-weight; unicode-range;</p>         
+                    <p><code>font-style</code> --- A propriedade do CSS que define se uma fonte deve ser estilizada com uma face normal, itálica ou oblíqua de sua família de fontes.</p> 
+                    <p><code>font-variant </code>--- A propriedade do CSS que especifica se um texto deve ser exibido em uma fonte small-caps ou não. Em uma fonte small-caps, todas as letras minúsculas são convertidas em letras maiúsculas. No entanto, as letras maiúsculas convertidas aparecem em um tamanho de fonte menor do que as letras maiúsculas originais no texto. A propriedade font-variant tem dois valores: normal e small-caps.</p>
+                    <p><code>font-weight </code>--- A propriedade do CSS que define o peso ou a intensidade da fonte (por exemplo, negrito). Os pesos disponíveis dependem da família de fontes que está atualmente definida. A propriedade font-weight tem vários valores, incluindo normal, bold, lighter, bolder e valores numéricos de 100 a 900.</p>         
+                    <p><code>font-size </code>--- esta propriedade define o tamanho da fonte do texto de um elemento. Você pode definir seu valor como um valor absoluto (por exemplo, 12px, 14pt, 1cm) ou como um valor relativo (por exemplo, 1em, 1.2rem, 120%) Obs.: melhor medida é o 1em=16px.</p>   
+                    <p><code>font-family </code>--- propriedade que define a fonte do texto de um elemento. Você pode definir seu valor como o nome de uma fonte específica ou uma lista de fontes em ordem de preferência, separadas por vírgulas. Se a primeira fonte da lista não estiver disponível no dispositivo do usuário, o navegador tentará usar a próxima fonte da lista e assim por diante, última fonte será a genérica. (Shorthand) font --- A propriedade do CSS abreviada que define todas as diferentes propriedades de fonte de um elemento em uma única declaração. Ela é uma maneira de encurtar o código, especificando todas as propriedades individuais da fonte em uma única propriedade. A propriedade font é uma propriedade abreviada para:</p>                     
+                
+                <h3>linhas</h3>
+                    <p><code>Line-height </code>--- espaçamento entre linhas de um documento HTML. A medida usa pode ser tamanho da letra 1em, 16px. (dica: centralizar conteúdo dentro de um container)</p>        
+                    <p><code>text-align</code> ---propriedade que define o alinhamento horizontal do texto de um elemento. Você pode definir seu valor como left, right, center ou justify.</p>    
+                    <p><code>text-indent </code>--- A propriedade do CSS que define a indentação da primeira linha em um bloco de texto. Pode ser definida por valores positivos ou negativos. Se o valor for positivo, a primeira linha será recuada para a direita.</p> 
+                    <br>
+                        
+                <h3>Text-decoration </h3>
+                    <p>usada para adicionar uma linha de decoração ao texto usando as propriedades:.</p>
+                    <div id="propriedade">
+                        <P><code>line:</code> propriedade é usada para adicionar uma linha de decoração ao texto. Ex.: overline , underline e line-through</P>
+                        <p><code>color:</code> propriedade é usada para definir a cor da linha de decoração</p>
+                        <p><code>Style:</code> propriedade define o estilo da decoração do texto (como sólido, ondulado, pontilhado, tracejado, duplo). <br> Pode ser medido em ex.: auto, px ou % : https://www.w3schools.com/cssref/pr_text_text-decoration.php</p>
+                        <p><code>Thickness:</code> propriedade especifica a espessura da linha de decoração.</p>
+                    </div>
+                    <p><code>Text-transform </code>--- propriedade CSS text-transform específica como capitalizar um texto de um elemento. Pode ser usado para que o texto apareça com todas as letras maiúsculas ou todas minúsculas, ou com cada palavra em maiúscula.</p>
+                    <p><code>list-style-position</code> : Especifica a posição do marcador em relação ao conteúdo da lista, ou seja, especifica se o marcador será colocado dentro ou fora da caixa de texto que define o conteúdo da lista: ul {list-style-position: inside} ol {list-style-position: outside}</p>
+                    <!--estudar
+                        Transition-property:
+                        Transition-duration:
+                    -->
+                <h3>Imagens</h3>
+
+        </div>    
+    </div>
+</body>
+</html>
