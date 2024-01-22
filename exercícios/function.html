@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <style>
+
+        .button {
+            background-color: blanchedalmond;
+            color: brown;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            line-height: 20px;
+            border: 3px solid brown;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="button">
+        <p id="p1">Olá mundo!</p>
+    </div>
+    
+    <script>
+
+         var p = window.document.getElementsByClassName('button')[0]
+
+         p.addEventListener('click', clicar)
+         p.addEventListener('mouseenter', entrar)
+         p.addEventListener('mouseout', sair)
+
+         function clicar() {
+            p.innerText = 'clicou!'
+         }
+
+         function entrar() {
+            p.innerText = 'entrou!'
+            p.style.lineHeight = '50px'
+         }
+
+         function sair() {
+            p.innerText = 'saiu!'
+         }
+
+        
+
+
+    </script>
+</body>
+</html>
