@@ -21,34 +21,29 @@
 </head>
 
 <body>
-
-    <div class="button">
-        <p id="p1">Olá mundo!</p>
-    </div>
-    
+    <h1>Somando Valores</h1>
+    <input type="number" name="text1" id="text1"> +        <!-- javsaScripit utiliza o ID dos <input>, diferente de PHP que utiliza o NAME -->
+    <input type="number" name="text2" id="text2"> 
+    <input type="button" value="somar" onclick="somar()">   <!-- <input> 'tipo button'  é o que desencadeia a função SOMAR-->
+    <div id="resp"> resposta </div>
     <script>
 
-         var p = window.document.getElementsByClassName('button')[0]
-
-         p.addEventListener('click', clicar)
-         p.addEventListener('mouseenter', entrar)
-         p.addEventListener('mouseout', sair)
-
-         function clicar() {
-            p.innerText = 'clicou!'
-         }
-
-         function entrar() {
-            p.innerText = 'entrou!'
-            p.style.lineHeight = '50px'
-         }
-
-         function sair() {
-            p.innerText = 'saiu!'
-         }
-
+        function somar() {
         
+            var tn1 = document.getElementById('text1')  
+            var tn2 = document.querySelector('input#text2')  //<input> receberá o resultado em forma de texto 'string'
+            var resp = document.querySelector('#resp')
 
+            var n1 = Number(tn1.value)                      //conversão de tipos de dados 'string' para 'Number'
+            var n2 = Number.parseFloat(tn2.value)          //OBSERVE que no Js os tipos primitivos são fracamente tipados; também podemos especificar melhor o tipo de dado.
+
+            var s = n1 + n2                //atribuir o resultado para uma resposta
+
+            resp.innerText = `a soma entre ${n1} e ${n2} é igual a ${s}` //observe que o tipo de acentuação CRASE.
+
+
+
+        }
 
     </script>
 </body>
