@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+
+    <style>
+        * {
+            font-size: 1.1em;
+            font-family: sans-serif;
+        }
+
+        div#tela {
+            background-color: rgb(147, 137, 137);
+            padding: 30px;
+            width: 500px;
+            box-shadow: 1px 1px rgba(0, 0, 0, 0.471);
+            border: 1px solid black
+        }
+
+        #button {
+            border-radius: 5px;
+            box-shadow: 1px 1px rgba(0, 0, 0, 0.422)
+        }
+
+        #paistxt {
+            border: 1px solid black;
+        }
+
+        div#resposta {
+            text-shadow: 1px 1px black;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>Qual pais você nasceu?</h1>
+    <div id="tela">
+        <input type="text" name="paistxt" id="paistxt">
+        <input id="button" type="button" value="examinar" onclick="clicar()">
+        <div id="resposta">resposta...</div>
+    </div>
+
+    <script>
+         
+         resposta.style.color = 'white'
+         paistxt.style.background = 'ice'
+         button.style.background = 'ice'
+         paistxt.style.color = 'red'
+         
+
+        function clicar() {
+
+            var button = document.querySelector("#button")
+            var paistxt = document.querySelector('input#paistxt')
+            var resp = document.querySelector('div#resposta')
+ 
+            var pais = (paistxt.value) 
+            
+
+            resp.innerHTML = `<p>você mora em <strong>${pais}</strong> , </p>`
+
+            if(pais=='Brasil') {
+
+                resp.innerHTML += `<p>você é brasileiro!</p>`
+            }
+            else {
+
+                resp.innerHTML += `<p>você é estrangeiro!</p>`
+            }
+        }
+
+        
+
+    </script>
+</body>
+</html>
