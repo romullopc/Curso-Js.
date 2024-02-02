@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Preencha o formulário</h1>
+    <input type="number" name="txt1" id="txt1"> + 
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" value="calcular" onclick="somar()">
+    <div id="resp"> resposta </div>
+
+    <script>
+
+        var InputText1 = document.querySelector('input#txt1')
+        var InputText2 = document.querySelector('input#txt2')
+        var resposta = document.querySelector('div#resp')
+
+
+        function somar() {
+
+            var n1 = Number(InputText1.value)
+            var n2 = Number(InputText2.value)
+
+            var s =  n1 + n2
+            resposta.innerHTML = `a soma entre os dois números é <strong>${s}</strong>`
+            
+            if(s > 0) {
+                resposta.innerText += ' o valor é positivo!'
+            }
+            else {
+                resposta.innerHTML += ' <p>o valor é negativo! </p>'
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
